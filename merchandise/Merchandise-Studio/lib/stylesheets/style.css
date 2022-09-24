@@ -1,0 +1,473 @@
+@import url("variable.css");
+/* @font-face {
+  font-family: "Roboto Black";
+  src: url("/media/fonts/roboto/roboto_black_macroman/blablabla.eot");
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(236, 236, 236);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* style for header section  */
+.m_logo img {
+  width: 200px;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  margin-top: 1.1rem;
+}
+
+/* header section start  */
+.header_text {
+  font-size: 3rem !important;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 900;
+  text-align: center;
+}
+
+.header_sub_text {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: var(--secondary);
+  font-weight: 400;
+  text-align: center;
+}
+.productImg {
+  height: 150px;
+  width: 100%;
+}
+.container {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header_section {
+  background-image: url(../images/top-bg.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  width: 80%;
+  margin-top: 0;
+}
+
+.header_section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+    to bottom,
+    #fff,
+    rgba(255, 255, 255, 0.718)
+  );
+}
+
+.product {
+  /* background-image: linear-gradient(
+    to top,
+    #fff,
+    rgba(239, 233, 233, 0.718),
+    transparent
+  ); */
+}
+
+img.skew {
+  transform: rotate(9deg);
+}
+
+.header_wraper,
+.card_header,
+.road_map_section_header {
+  line-height: 0;
+  text-align: center;
+}
+.header_wraper img {
+  height: 50px;
+  width: 55%;
+
+  margin: 1.5rem 0 1.2rem 0;
+}
+
+.header_btn {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-style: italic;
+  background-color: var(--primary) !important;
+}
+
+/* header section end  */
+
+.quote_header {
+  color: var(--primary);
+  text-align: center;
+  font-weight: 900;
+  /* font-size: var(--header-font-size); */
+  font-size: 1.6rem;
+  margin-top: 5.5rem;
+}
+
+.lead_text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--secondary);
+  font-style: italic;
+  margin: auto;
+}
+
+/* counter css  */
+.doKnowContainer {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.doKnowDiv {
+  height: 600px;
+  /* width: 100%; */
+  background-image: url(../images/Know_@3x.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+  width: 70%;
+  position: relative;
+}
+
+.cardContainer {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.m_card_section {
+  width: 70%;
+}
+
+.text_format {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+.text_format .text_1 {
+  margin: 2.5rem 0 0 14rem;
+}
+.text_format .text_2 {
+  margin: 24rem 0 0 0rem;
+}
+.text_format .text_3 {
+  margin: 2.5rem 0 0 0rem;
+}
+.text_format .text_4 {
+  margin: 24rem 0 0 10rem;
+}
+.counter_header_text {
+  font-size: 1.3rem;
+}
+
+.counter {
+  box-shadow: 1px 9px 12px grey;
+  padding: 2rem 1rem;
+}
+
+.counter_wraper {
+  position: relative;
+  text-align: center;
+}
+
+strong.counter_progress,
+span.counter_progress {
+  position: absolute;
+  top: 11rem;
+  left: 14rem;
+  font-size: 3rem;
+  color: var(--secondary);
+}
+
+span.counter_progress {
+  left: 13.5rem;
+}
+
+strong.counter_progress_bottom {
+  position: absolute;
+  top: 6rem;
+  left: 10rem;
+  font-size: 3rem;
+  color: var(--secondary);
+}
+
+.line-height-0 {
+  line-height: 0;
+}
+
+.counter_header_text {
+  color: var(--secondary);
+  text-transform: capitalize;
+}
+
+h2.counter_middle_text,
+h1.counter_middle_text {
+  text-align: center;
+  color: var(--primary);
+  font-size: 4rem;
+  line-height: 1;
+}
+
+h1.counter_middle_text {
+  font-size: 6rem;
+}
+
+.count_middle_image img {
+  width: 22rem;
+  transform: rotateX(46deg);
+}
+
+.count_middle_image {
+  text-align: center;
+}
+
+.count_middle_text {
+  color: var(--primary);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.1;
+  text-align: center;
+  transform: rotateX(36deg);
+}
+
+.count_middle_text p {
+  font-size: 5rem;
+}
+
+.count_middle_text h1 {
+  font-size: 7rem;
+}
+
+/* counter css end */
+
+.card_header h1 {
+  color: var(--primary);
+  font-size: var(--header-font-size);
+}
+
+.card_header p {
+  color: var(--secondary);
+  font-size: 1.4rem;
+}
+
+.card_bg_image {
+  background: url(../images/card-bg.png) center no-repeat;
+  /* background-size: 200px 80px; */
+  /* background-size: 50px, 40px, auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.card_bg_image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+.card_wraper {
+  width: 100%;
+  height: 21rem;
+  /* height: 35rem; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card_border {
+  width: 1rem;
+  height: 100%;
+  background-color: #fff;
+}
+
+.m_card {
+  background: #fff;
+  padding: 1.3rem;
+  height: 16rem;
+  width: 16rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-h2 {
+  font-size: 1.2rem;
+}
+
+/* .m_card {
+  background: #fff;
+  padding: 2rem;
+  height: 26rem;
+  width: 22rem;
+  margin-top: 2rem;
+} */
+
+.m_card img {
+  width: 6rem;
+}
+
+.road_map_section_header h1 {
+  color: var(--primary);
+  text-transform: uppercase;
+  /* font-size: var(--header-font-size); */
+  font-size: 2.9rem;
+}
+.roadmap_h3 {
+  font-size: 1.1rem;
+}
+
+.road_map_section_header p {
+  color: var(--secondary);
+  font-size: 1.7rem;
+}
+.roadmapContainer {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.roadmap {
+  background-color: #f7f7f7;
+  overflow: hidden;
+  width: 70%;
+}
+
+.roadmap_icon_text {
+  text-align: center;
+}
+
+.roadmap_icon_img img {
+  width: 3rem;
+}
+.roadmap_single_icon {
+  margin-right: 7rem;
+}
+
+.road-image {
+  text-align: center;
+  padding: 1rem 4rem;
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.road-image img {
+  width: 32rem;
+  /* width: 50rem; */
+}
+
+.roadmap_text_bottom {
+  position: absolute;
+}
+
+.roadmap_text_bottom img {
+  width: 4.2rem;
+}
+
+/* positioning  */
+
+.roadmap_text_bottom.first_box {
+  top: -4rem;
+  margin-left: 0rem;
+  margin-top: 4rem;
+}
+
+.roadmap_text_bottom.second {
+  top: -3rem;
+  right: 13rem;
+}
+
+.roadmap_text_bottom.third_box {
+  top: 11rem;
+  left: 11rem;
+}
+
+.roadmap_text_bottom.forth_box {
+  top: 6rem;
+  right: 14rem;
+}
+
+.roadmap_text_bottom.fifth_box {
+  top: 20rem;
+  left: 22rem;
+}
+
+.roadmap_text_bottom.sixth_box {
+  top: 19rem;
+  right: 10rem;
+}
+
+section.footer h1 {
+  color: var(--secondary);
+  font-style: italic;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.footer_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.footer_icon a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.4rem;
+}

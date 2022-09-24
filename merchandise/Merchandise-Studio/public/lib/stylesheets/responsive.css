@@ -1,0 +1,148 @@
+@media screen and (max-width: 575px) {
+    section {
+        margin-top: 2rem;
+    }
+
+    .header_wraper,
+    .card_header,
+    .road_map_section_header {
+        line-height: 1;
+
+    }
+
+    strong.counter_progress,
+    span.counter_progress {
+        top: 10.5rem;
+        left: 11rem;
+    }
+
+    strong.counter_progress,
+    span.counter_progress {
+        top: 6.5rem;
+        left: 43%;
+    }
+
+    #circle_two span {
+        left: 39%;
+    }
+
+    strong.counter_progress_bottom {
+        top: 6.5rem;
+        left: 43%;
+    }
+
+    .count_middle_text {
+        line-height: 1;
+    }
+
+    .count_middle_text p {
+        font-size: 3rem;
+    }
+
+    .count_middle_text h1 {
+        font-size: 5rem;
+    }
+
+    .card_header h1 {
+        font-size: 3rem;
+    }
+
+    .card_bg_image {
+        background-position: bottom;
+    }
+
+    .card_wraper {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .m_card {
+        height: 20rem;
+        width: 24rem;
+    }
+
+    .card_border {
+        display: none;
+    }
+
+    .road_map_section_header h1 {
+        font-size: 3rem;
+    }
+
+    .roadmap_pointer {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .road-image img {
+        width: 18rem;
+    }
+
+    .roadmap_text_bottom img,
+    .roadmap_icon_text img {
+        width: 4rem;
+    }
+
+    .road-image {
+        margin-left: 0;
+        margin-bottom: 7rem;
+    }
+
+    .roadmap_text_bottom h3,
+    .roadmap_icon_text h3 {
+        font-size: 0.7rem;
+    }
+
+    .roadmap_text_bottom.first_box {
+        left: 1rem;
+        top: -4rem;
+    }
+
+    .roadmap_text_bottom.second {
+        right: 3rem;
+        top: -2rem;
+    }
+
+    .roadmap_text_bottom.third_box {
+        top: 4rem;
+        left: 2rem;
+    }
+
+    .roadmap_text_bottom.forth_box {
+        top: 3rem;
+        right: 3rem;
+    }
+
+    .roadmap_text_bottom.fifth_box {
+        top: 10rem;
+        left: 4rem;
+    }
+
+    .roadmap_text_bottom.sixth_box {
+        top: 11rem;
+        right: 4rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .header_text {
+        font-size: 3rem !important
+    }
+
+    strong.counter_progress,
+    span.counter_progress {
+        left: 9.5rem;
+    }
+
+    strong.counter_progress_bottom {
+        top: 6.5rem;
+        left: 9rem;
+    }
+
+    .roadmap_icon_text {
+        margin-bottom: 1rem !important;
+    }
+}
